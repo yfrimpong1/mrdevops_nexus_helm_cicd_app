@@ -46,6 +46,8 @@ pipeline{
                         docker login -u admin -p $nexux_creds 192.168.100.6:8083
                         docker push  192.168.100.6:8083/springapp:${VERSION}
                         docker rmi 192.168.100.6:8083/springapp:${VERSION}
+                        
+                    '''
                     }
 
                 }
